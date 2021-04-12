@@ -1,0 +1,126 @@
+@font-face {
+  font-family: "DinRegular";
+  src: url("../fonts/dean-regular.OTF") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "DinThin";
+  src: url("../fonts/dean-thinn.OTF") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "DinMedium";
+  src: url("../fonts/dean-medium.OTF") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "DinBold";
+  src: url("../fonts/dean-bold.OTF") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font-family: "DinRegular";
+}
+
+.login {
+  overflow: hidden;
+}
+
+@media (max-width: 767px) {
+  .login .mobile-row {
+    height: 100vh;
+  }
+}
+
+.login .w-65 {
+  width: 55% !important;
+}
+
+.login__form {
+  margin-top: 30px;
+}
+
+.login__form__group {
+  position: relative;
+}
+
+.login__form__group__errorIcon {
+  position: absolute;
+  left: 0;
+  position: absolute;
+  left: 7px;
+  width: 29px;
+  top: 10px;
+  display: none;
+}
+
+.login__form__group__errorMessage {
+  font-size: 15px;
+  display: none;
+}
+
+.login__form__group.error input {
+  border: 1px solid #d9534f;
+}
+
+.login__form__group.error .login__form__group__errorIcon,
+.login__form__group.error .login__form__group__errorMessage {
+  display: block;
+}
+
+.login__form__group__input {
+  background-color: #f2f2f2;
+  border-radius: 20pc;
+  -webkit-border-radius: 20pc;
+  -moz-border-radius: 20pc;
+  -ms-border-radius: 20pc;
+  -o-border-radius: 20pc;
+  border: 0;
+  padding: 11px 20px;
+}
+
+.login__form__group__input:focus {
+  outline: 0;
+}
+
+.login__form__group__submit {
+  background-color: #FFC800;
+  border-radius: 20pc;
+  -webkit-border-radius: 20pc;
+  -moz-border-radius: 20pc;
+  -ms-border-radius: 20pc;
+  -o-border-radius: 20pc;
+  border: 0;
+  padding: 11px 20px;
+}
+
+.login__form__group__submit:focus {
+  outline: 0;
+}
+
+.login__bg {
+  background-image: url(../images/bg.svg);
+  height: 100vh;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 767px) {
+  .login__bg {
+    height: 100%;
+  }
+}
+
+.login__bg img {
+  width: 50%;
+}
+/*# sourceMappingURL=style.css.map */

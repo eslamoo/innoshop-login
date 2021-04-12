@@ -1,0 +1,110 @@
+@font-face {
+    font-family: "DinRegular";
+    src: url("../fonts/dean-regular.OTF") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "DinThin";
+    src: url("../fonts/dean-thinn.OTF") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "DinMedium";
+    src: url("../fonts/dean-medium.OTF") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "DinBold";
+    src: url("../fonts/dean-bold.OTF") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    font-family: "DinRegular";
+}
+
+.login {
+    overflow: hidden;
+    .mobile-row {
+        @media(max-width: 767px) {
+            height: 100vh;
+        }
+    }
+    .w-65 {
+        width: 55% !important;
+    }
+    &__form {
+        margin-top: 30px;
+        &__group {
+            position: relative;
+            &__errorIcon {
+                position: absolute;
+                left: 0;
+                position: absolute;
+                left: 7px;
+                width: 29px;
+                top: 10px;
+                display: none;
+            }
+            &__errorMessage {
+                font-size: 15px;
+                display: none;
+            }
+            &.error {
+                input {
+                    border: 1px solid #d9534f;
+                }
+                .login__form__group__errorIcon,
+                .login__form__group__errorMessage {
+                    display: block;
+                }
+            }
+            &__input {
+                background-color: #f2f2f2;
+                border-radius: 20pc;
+                -webkit-border-radius: 20pc;
+                -moz-border-radius: 20pc;
+                -ms-border-radius: 20pc;
+                -o-border-radius: 20pc;
+                border: 0;
+                padding: 11px 20px;
+                &:focus {
+                    outline: 0;
+                }
+            }
+            &__submit {
+                background-color: #FFC800;
+                border-radius: 20pc;
+                -webkit-border-radius: 20pc;
+                -moz-border-radius: 20pc;
+                -ms-border-radius: 20pc;
+                -o-border-radius: 20pc;
+                border: 0;
+                padding: 11px 20px;
+                &:focus {
+                    outline: 0;
+                }
+            }
+        }
+    }
+    &__bg {
+        background-image: url(../images/bg.svg);
+        height: 100vh;
+        position: relative;
+        background-repeat: no-repeat;
+        background-size: cover;
+        @media(max-width: 767px) {
+            height: 100%;
+        }
+        img {
+            width: 50%;
+        }
+    }
+}
